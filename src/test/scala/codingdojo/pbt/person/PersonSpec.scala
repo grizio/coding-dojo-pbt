@@ -12,11 +12,9 @@ class PersonSpec extends FlatSpec with Matchers with PropertyChecks {
     Person.verification.verify(person) should ===(Valid(person))
   }
 
-  /*
   it should "be valid for any valid Person" in {
     forAll(PersonGenerators.validPerson) { person =>
       Person.verification.verify(person) should ===(Valid(person))
     }
   }
-  */
 }
